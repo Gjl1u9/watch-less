@@ -7,6 +7,10 @@ tag on `main` whose section here becomes the GitHub release.
 
 ## [Unreleased]
 
+### Changed
+
+- Digests saved to Heptabase are tagged `YouTube` instead of `yt-digest`.
+
 ## [0.1.0] - 2026-10-28
 
 The first release: summarize a YouTube video into a digest in Heptabase or Notion without opening it.

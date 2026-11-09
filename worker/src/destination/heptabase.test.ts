@@ -76,7 +76,7 @@ test("delivers an embedded digest and tags the created note, keeping the AI mark
   const receivedCalls = await calls();
   expect(receivedCalls).toEqual([
     ["note", "create", "--content-file", expect.any(String)],
-    ["tag", "add", "--card-id", "11111111-1111-4111-8111-111111111111", "--tag-name", "yt-digest"],
+    ["tag", "add", "--card-id", "11111111-1111-4111-8111-111111111111", "--tag-name", "YouTube"],
   ]);
   expect(await readFile(join(folder, "received.md"), "utf8")).toBe(toHeptabaseMarkdown(digest));
   await expect(access(receivedCalls[0]?.[3] ?? "missing-content-file")).rejects.toThrow();

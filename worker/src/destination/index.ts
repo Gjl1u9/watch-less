@@ -43,7 +43,7 @@ export function createDestination(): Destination {
         ) {
           throw new Error("Heptabase did not return a note id");
         }
-        await run(["tag", "add", "--card-id", note.id, "--tag-name", "yt-digest"]);
+        await run(["tag", "add", "--card-id", note.id, "--tag-name", "YouTube"]);
       } catch (cause) {
         throw new DigestFailure("Heptabase delivery failed", { cause });
       } finally {
