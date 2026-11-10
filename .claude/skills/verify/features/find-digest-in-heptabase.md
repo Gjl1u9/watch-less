@@ -1,6 +1,6 @@
 # Find a digest in Heptabase
 
-A finished digest becomes a Heptabase note with its title, an embedded video, the `yt-digest` tag and the Created by
+A finished digest becomes a Heptabase note with its title, an embedded video, the `YouTube` tag and the Created by
 AI mark. All worker adapters are built. Their command contracts are checked with fake executables; the installed
 whole flow still needs a real run with the developer's agreement.
 
@@ -10,7 +10,7 @@ whole flow still needs a real run with the developer's agreement.
 - `eligibility`: refuse live, upcoming, private, members-only, age-restricted and over-one-hour videos with a reason.
 - `model`: give the isolated model only the prompt, title, video link and timed transcript; require all four sections.
 - `usage-limit`: leave a known usage-limit request queued without a notification; timeouts and other errors fail.
-- `delivery`: create a note from the digest, then tag that note `yt-digest`.
+- `delivery`: create a note from the digest, then tag that note `YouTube`.
 - `startup`: when the CLI cannot connect, start Heptabase once and retry only the failed command.
 - `failure`: report a delivery reason if creation, tagging, startup or the retry fails.
 

@@ -260,7 +260,7 @@ it: deduplication uses the done folder, and the digest's Markdown carries nothin
 
 - The worker creates a note from the digest with the `heptabase` CLI; the digest's first line, `# <title>`, becomes
   the card's title, and the video's link becomes an embedded player (`{{youtube <link>}}`, Heptabase's own syntax).
-- It tags the card `yt-digest`, and leaves Heptabase's Created by AI mark on it.
+- It tags the card `YouTube`, and leaves Heptabase's Created by AI mark on it.
 - When Heptabase is not running, the worker starts it with `heptabase start`; if delivery still fails, the digest
   fails.
 
@@ -272,7 +272,7 @@ it: deduplication uses the done folder, and the digest's Markdown carries nothin
   first line, `# <title>`, becomes the page's title, and the video's link becomes a `<video src="<link>"></video>`
   block, which Notion embeds as a player.
 - With a folder page, `--parent page:<id>` makes the digest a new page inside it; without one the page goes to the
-  Private section. Notion pages have no tags, so there is no `yt-digest` tag.
+  Private section. Notion pages have no tags, so there is no `YouTube` tag.
 - `ntn` runs with only `HOME`, `PATH` and `USER`, and for at most 90 seconds. When it is not installed, or its
   login is gone, the digest fails with `Notion CLI is not installed: run sh scripts/setup.sh` or `Notion CLI is not
   signed in: run ntn login`.
