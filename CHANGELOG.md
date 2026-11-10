@@ -11,6 +11,11 @@ tag on `main` whose section here becomes the GitHub release.
 
 - Digests saved to Heptabase are tagged `YouTube` instead of `yt-digest`.
 
+### Fixed
+
+- A digest saved to Heptabase shows the video as an embedded player again, in Heptabase's current
+  `<hepta-video>` syntax, instead of a `{{youtube …}}` line.
+
 ## [0.1.0] - 2026-10-28
 
 The first release: summarize a YouTube video into a digest in Heptabase or Notion without opening it.

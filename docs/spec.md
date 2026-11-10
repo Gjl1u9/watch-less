@@ -259,7 +259,8 @@ The request says which destination a digest goes to: Heptabase, the default, or 
 it: deduplication uses the done folder, and the digest's Markdown carries nothing specific to either.
 
 - The worker creates a note from the digest with the `heptabase` CLI; the digest's first line, `# <title>`, becomes
-  the card's title, and the video's link becomes an embedded player (`{{youtube <link>}}`, Heptabase's own syntax).
+  the card's title, and the video's link becomes an embedded player (`<hepta-video src="<link>"></hepta-video>`,
+  Heptabase's own syntax).
 - It tags the card `YouTube`, and leaves Heptabase's Created by AI mark on it.
 - When Heptabase is not running, the worker starts it with `heptabase start`; if delivery still fails, the digest
   fails.
