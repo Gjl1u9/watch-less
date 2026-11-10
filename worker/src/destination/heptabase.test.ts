@@ -15,7 +15,7 @@ const digest = {
 
 test("embeds the header video link while preserving the title and model sections", () => {
   expect(toHeptabaseMarkdown(digest)).toBe(
-    "# 虛構影片\n\n{{youtube https://www.youtube.com/watch?v=aaaaaaaaaaa}}\n\n## 結論\n參見 [影片](https://www.youtube.com/watch?v=aaaaaaaaaaa)。\n",
+    '# 虛構影片\n\n<hepta-video src="https://www.youtube.com/watch?v=aaaaaaaaaaa"></hepta-video>\n\n## 結論\n參見 [影片](https://www.youtube.com/watch?v=aaaaaaaaaaa)。\n',
   );
 });
 
